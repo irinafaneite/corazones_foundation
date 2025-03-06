@@ -4,11 +4,118 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Corazones Foundation</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <div class="flex flex-wrap h-[90vh] bg-primary text-white">
+      <div class="w-full sm:w-8/12 mb-10">
+        <div class="container mx-auto h-full sm:p-10">
+          <nav class="flex pt-7 px-4 justify-between items-center lg:pt-0">
+            <div class="text-4xl font-bold">
+              <img class="w-[50px]" src="./src/assets/images/logo-blanco.png" />
+            </div>
+            <div>
+              <ul class="flex">
+                <li class="mr-4">
+                  <a href="#">Home</a>
+                </li>
+                <li class="mr-4">
+                  <a href="#">About</a>
+                </li>
+                <li class="mr-4">
+                  <a href="#">Services</a>
+                </li>
+                <li class="mr-4">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <header
+            class="container pb-5 px-4 flex items-center h-full lg:mt-0 sm:pb-0"
+          >
+            <div class="w-full">
+              <h1
+                class="max-[400px]:text-xl text-2xl lg:text-5xl font-bold relative"
+              >
+                <span
+                  class="flex flex-col justify-end relative overflow-hidden min-h-[6em] lg:min-h-[5em]"
+                >
+                  <span
+                    class="absolute opacity-0 bottom-2.5 left-0 w-full text-changing-item"
+                    >Porque Sanar requiere
+                    <span class="text-secondary">coraje</span></span
+                  >
+
+                  <span
+                    class="absolute opacity-0 bottom-2.5 left-0 w-full text-changing-item"
+                    ><span class="text-secondary">1 de cada 3 mujeres</span> en
+                    Estados Unidos experimentará
+                    <span class="text-secondary">violencia de género</span> a lo
+                    largo de su <span class="text-secondary">vida</span></span
+                  >
+
+                  <span
+                    class="absolute opacity-0 bottom-2.5 left-0 w-full text-changing-item"
+                    >Muchas víctimas no encuentran el
+                    <span class="text-secondary">apoyo</span> que necesitan para
+                    <span class="text-secondary">reconstruir</span> sus vidas y
+                    romper el ciclo de la
+                    <span class="text-secondary">violencia</span></span
+                  >
+                </span>
+              </h1>
+              <div class="w-20 h-2 bg-other my-4"></div>
+              <p class="text-xl mb-10">
+                En Corazones of courage foundation trabajamos para cambiar esta
+                realidad a través de la educación, el acompañamiento psicológico
+                grupal e individual y soporte integral a las sobrevivientes.
+              </p>
+              <div class="flex gap-5">
+                <button
+                  class="bg-other text-white text-2xl font-medium px-4 py-2 rounded shadow cursor-pointer"
+                >
+                  ¡Conocenos!
+                </button>
+                <button
+                  class= "bg-other anima text-white text-2xl font-medium px-4 py-2 rounded shadow cursor-pointer anima"
+                >
+                  ¡Dona!
+                </button>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div
+        class="image-carousel w-full h-[45vh] sm:h-[90vh] sm:w-4/12 overflow-hidden relative"
+      >
+        <div class="carousel-container flex h-full">
+          <img
+            src="./src/assets/images/header_img_3.webp"
+            alt="Image 1"
+            class="w-full h-full object-cover flex-shrink-0"
+          />
+          <img
+            src="./src/assets/images/header_img_2.webp"
+            alt="Image 2"
+            class="w-full h-full object-cover flex-shrink-0"
+          />
+          <img
+            src="./src/assets/images/header_img_1.webp"
+            alt="Image 3"
+            class="w-full h-full object-cover flex-shrink-0"
+          />
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

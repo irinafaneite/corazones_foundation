@@ -2,19 +2,28 @@ export const teamMembers = [
   {
     name: "Irina Faneite",
     occupation: "Fundadora, Psicóloga, Perito experta en violencia",
+    photo: "./src/assets/images/members/irina.webp",
+  },
+  {
+    name: "Norvelia Velasquez",
+    occupation: "Psicologa psicoterapeuta, Facilidatora de biodanza",
+    photo: "./src/assets/images/members/norvelia.webp",
   },
   {
     name: "Zulma Camacaro",
     occupation:
       "Psicóloga, Sexóloga, Especialista en prevención y atención del abuso sexual",
-  },
-  {
-    name: "Norvelia Velasquez",
-    occupation: "Psicologa psicoterapeuta, Facilidatora de biodanza",
+    photo: "./src/assets/images/members/zulma.webp",
   },
   {
     name: "Marly Rivera",
     occupation: "Psicóloga, Especialista en trabajo comunitario",
+    photo: "./src/assets/images/members/marly.webp",
+  },
+  {
+    name: "Vanessa de Colic",
+    occupation: "Psicóloga, Coach de niños y familias",
+    photo: "./src/assets/images/members/vanessa.webp",
   },
 ];
 
@@ -22,15 +31,15 @@ export const team = (data) => {
   const container = document.getElementById("team_container");
 
   teamMembers.map((member, index) => {
-    container.innerHTML += `          <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
+    container.innerHTML += `          <div class="w-full px-4">
             <div
-              class="px-5 pt-12 pb-10 mb-8 bg-primary group rounded-xl shadow-testimonial dark:bg-dark dark:shadow-none"
+              class="px-5 pt-12 pb-10 mb-8 bg-white group rounded-xl shadow-testimonial dark:bg-dark dark:shadow-none"
             >
               <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                 <img
-                  src="./src/assets/images/members/team_member_1.webp"
+                  src=${member.photo}
                   alt="team image"
-                  class="h-[120px] w-[120px] rounded-full"
+                  class="h-[120px] w-[120px] object-cover rounded-full"
                 />
                 <span
                   class="absolute bottom-0 left-0 w-10 h-10 transition-all rounded-full opacity-0 -z-10 bg-secondary group-hover:opacity-100"
@@ -43,17 +52,17 @@ export const team = (data) => {
               </div>
               <div class="text-center">
                 <h4
-                  class="mb-1 font-kanit text-lg text-white font-semibold"
+                  class="mb-1 font-kanit text-lg text-primary font-semibold"
                 >
                   ${member.name}
                 </h4>
-                <p class="mb-5 text-sm text-white">
+                <p class="mb-5 text-sm text-secondary">
                   ${member.occupation}
                 </p>
                 <div class="flex items-center justify-center gap-5">
                   <a
                     href="javascript:void(0)"
-                    class="text-white hover:text-secondary"
+                    class="text-primary hover:text-secondary"
                   >
                     <svg
                       width="18"
@@ -71,7 +80,7 @@ export const team = (data) => {
                   </a>
                   <a
                     href="javascript:void(0)"
-                    class="text-white hover:text-secondary"
+                    class="text-primary hover:text-secondary"
                   >
                     <svg
                       width="18"
@@ -89,7 +98,7 @@ export const team = (data) => {
                   </a>
                   <a
                     href="javascript:void(0)"
-                    class="text-white hover:text-secondary"
+                    class="text-primary hover:text-secondary"
                   >
                     <svg
                       width="18"

@@ -7,12 +7,12 @@ import vanessaImg from '../assets/images/members/vanessa.webp';
 export const teamMembers = [
   {
     name: "Irina Faneite",
-    occupation: "Fundadora, Psicóloga, Perito experta en violencia",
+    occupation: "Fundadora, <br/> Psicóloga, Perito experta en violencia",
     photo: irinaImg,
   },
   {
     name: "Norvelia Velasquez",
-    occupation: "Psicologa psicoterapeuta, Facilidatora de biodanza",
+    occupation: "Psicologa psicoterapeuta, Facilitadora de biodanza",
     photo: norveliaImg,
   },
   {

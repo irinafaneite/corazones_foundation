@@ -31,7 +31,7 @@ export const team = (data) => {
   const container = document.getElementById("team_container");
 
   teamMembers.map((member, index) => {
-    container.innerHTML += `          <div class="w-full px-4">
+    container.innerHTML += `          <div class="w-full px-4 md:px-0">
             <div
               class="px-5 pt-12 pb-10 mb-8 bg-white group rounded-xl shadow-testimonial dark:bg-dark dark:shadow-none"
             >

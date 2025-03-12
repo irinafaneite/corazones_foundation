@@ -14,11 +14,11 @@
   <title>Corazones Foundation</title>
 </head>
 
-<body>
+<body class="font-kanit">
   <div class="flex flex-wrap md:h-[90vh] bg-primary text-white overflow-hidden">
     <div class="w-full sm:w-8/12 mb-10">
       <div class="container mx-auto h-full sm:p-10">
-        <nav class="flex pt-7 px-4 justify-between items-center lg:pt-0">
+        <nav class="flex gap-5 pt-7 px-4 justify-between items-center lg:pt-0">
           <div class="text-4xl font-bold">
             <img class="w-[50px]" src="./src/assets/images/logo-blanco.png" />
           </div>
@@ -38,6 +38,9 @@
               </li>
               <li class="mr-4">
                 <a href="#team">Equipo</a>
+              </li>
+              <li class="mr-4">
+                <a href="#sponsor">Aliados</a>
               </li>
               <li class="mr-4">
                 <a href="#contact">Contacto</a>
@@ -97,33 +100,7 @@
     </div>
   </div>
 
-  <section id="reportaje" class="pt-12 bg-gray-50 sm:pt-16 pb-7">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="text-center">
-        <h2
-          class="font-kanit max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight">
-          Reporte telemundo
-        </h2>
-        <p class="max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter">
-          En este reporte, la Fundación Corazones de Courage presenta un
-          contenido informativo que aborda las problemáticas relacionadas con
-          la violencia de género en el mundo. Se destaca la importancia de la
-          educación, el apoyo psicológico y el trabajo en equipo para romper
-          el ciclo de la violencia y promover la igualdad de género.
-        </p>
-      </div>
-    </div>
-    <div class="bg-white">
-      <div class="relative mx-auto mt-4 md:mt-8">
-        <div class="lg:max-w-4xl lg:mx-auto">
-          <script type="text/javascript" charset="UTF-8"
-            src="https://telemundohouston.com/portableplayer/?CID=1:20:2465622&videoID=2405591619812&origin=telemundohouston.com&fullWidth=y&autoplay=true"></script>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="bg-primary pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]">
+  <section id="about" class="bg-white pb-8 pt-20 lg:pb-[70px] lg:pt-[120px]">
     <div class="container px-4 mx-auto">
       <div>
         <div class="flex flex-wrap items-center -mx-4">
@@ -133,7 +110,7 @@
                 class="mb-5 text-3xl font-kanit font-bold leading-tight text-secondary sm:text-[40px] sm:leading-[1.2]">
                 ¿Quiénes somos?
               </h2>
-              <p class="mb-10 text-base leading-relaxed text-white font-inter">
+              <p class="mb-10 text-base leading-relaxed text-primary font-kanit">
                 Somos una organización sin fines de lucro 501(c)(3)
                 comprometida con la prevención y atención de la violencia de
                 género, ofreciendo programas de educación, apoyo psicológico y
@@ -147,7 +124,7 @@
                 <br />
                 Nuestra misión es apoyar a mujeres que han sido víctimas de
                 violencia, ayudándolas a reconstruir su vida con dignidad,
-                seguridad y autonomía. brindamos herramientas para que las
+                seguridad y autonomía. Brindamos herramientas para que las
                 mujeres recuperen su confianza, se reconozcan como
                 sobrevivientes y encuentren nuevas oportunidades. Nuestro
                 objetivo es que vivan una vida libre de violencia.
@@ -155,8 +132,9 @@
                 <br />
                 Nuestra labor no solo busca asistir a mujeres sobrevivientes,
                 sino también prevenir la violencia promoviendo la educación
-                sobre relaciones sanas y límites. Además de que aprendan a
-                reconocer señales de alarma y acciones a tomar.
+                sobre relaciones sanas y límites personales. El objetivo es que todas las personas aprendan a reconocer
+                las señales de alarma y cuáles son las
+                acciones a tomar frente a la violencia de género.
               </p>
             </div>
           </div>
@@ -188,10 +166,10 @@
     </div>
   </section>
 
-  <section id="services" class="w-full mx-auto py-10">
+  <section id="services" class="w-full bg-primary mx-auto py-10">
     <div
-      class="flex justify-center mb-5 text-4xl font-kanit font-bold leading-tight text-primary sm:text-[40px] sm:leading-[1.2]">
-      <h3>Nuestros Servicios</h3>
+      class="flex justify-center mb-5 text-4xl font-kanit font-bold leading-tight text-white sm:text-[40px] sm:leading-[1.2]">
+      <h3>Nuestros Programas</h3>
     </div>
 
     <div class="w-full h-full flex flex-col items-center md:py-4 py-10">
@@ -218,24 +196,37 @@
           </p>
           <ul class="flex flex-col gap-4 mt-4">
             <li class="flex items-start gap-3">
-              <span class="flex-shrink-0 mt-1"><img class="w-[20px]" src="./src/assets/images/heart.svg"
-                  alt="heart icon" /></span>Señales de alarma para identificar relaciones y comportamientos
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  class="fill-secondary mx-auto">
+                  <path
+                    d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                </svg></span>Señales de alarma para identificar relaciones y comportamientos
               peligrosos.
             </li>
             <li class="flex items-start gap-3">
               <span class="flex-shrink-0 mt-1">
-                <img class="w-[20px]" src="./src/assets/images/heart.svg" alt="heart icon" /></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  class="fill-secondary mx-auto">
+                  <path
+                    d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                </svg></span>
               Cómo actuar si eres testigo de una situación de violencia.
             </li>
             <li class="flex items-start gap-3">
-              <span class="flex-shrink-0 mt-1"><img class="w-[20px]" src="./src/assets/images/heart.svg"
-                  alt="heart icon" /></span>
+              <span class="flex-shrink-0 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 24 24" class="fill-secondary mx-auto">
+                  <path
+                    d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                </svg></span>
               Cómo acompañar a una persona en riesgo, brindándole apoyo sin
               revictimizarla.
             </li>
             <li class="flex items-start gap-3">
-              <span class="flex-shrink-0 mt-1"><img class="w-[20px]" src="./src/assets/images/heart.svg"
-                  alt="heart icon" /></span>
+              <span class="flex-shrink-0 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 24 24" class="fill-secondary mx-auto">
+                  <path
+                    d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                </svg></span>
               El concepto de amor sano, basado en el respeto, la libertad y la
               autonomía.
             </li>
@@ -265,7 +256,11 @@
           <ul class="flex flex-col gap-4 mt-4">
             <li class="flex items-start gap-3">
               <span class="flex-shrink-0 mt-1">
-                <img class="w-[20px]" src="./src/assets/images/heart.svg" alt="heart icon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  class="fill-secondary mx-auto">
+                  <path
+                    d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                </svg>
               </span>
               <span><strong>Clases semanales:</strong> espacios vivenciales donde
                 combinamos teoría y experiencia para hablar sobre gestión de
@@ -274,7 +269,11 @@
             </li>
             <li class="flex items-start gap-3">
               <span class="flex-shrink-0 mt-1">
-                <img class="w-[20px]" src="./src/assets/images/heart.svg" alt="heart icon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  class="fill-secondary mx-auto">
+                  <path
+                    d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                </svg>
               </span>
               <span><strong>Acompañamiento emocional grupal:</strong> en cada
                 encuentro las participantes hablan libremente sin juicio sobre
@@ -282,7 +281,11 @@
             </li>
             <li class="flex items-start gap-3">
               <span class="flex-shrink-0 mt-1">
-                <img class="w-[20px]" src="./src/assets/images/heart.svg" alt="heart icon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  class="fill-secondary mx-auto">
+                  <path
+                    d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                </svg>
               </span>
               <span><strong>Sesiones psicoeducativas individuales:</strong> cada
                 una de las participantes es asignada a un psicólogo
@@ -292,7 +295,11 @@
             </li>
             <li class="flex items-start gap-3">
               <span class="flex-shrink-0 mt-1">
-                <img class="w-[20px]" src="./src/assets/images/heart.svg" alt="heart icon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  class="fill-secondary mx-auto">
+                  <path
+                    d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                </svg>
               </span>
               <span><strong>Soporte integral en situaciones que se desprenden de la
                   violencia:</strong>
@@ -304,7 +311,11 @@
               <span>
             <li class="flex items-start gap-3">
               <span class="flex-shrink-0 mt-1">
-                <img class="w-[20px]" src="./src/assets/images/heart.svg" alt="heart icon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  class="fill-secondary mx-auto">
+                  <path
+                    d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                </svg>
               </span>
               <span><strong>Asesoría en empleabilidad:</strong> la ultima
                 fase del programa se trata de la preparación para el mundo
@@ -316,8 +327,7 @@
           </ul>
 
           <p class="mt-4">
-            Queremos que más personas puedan identificar, prevenir y actuar
-            ante la violencia, creando redes de apoyo que salvan vidas.
+            Acompañamos a mujeres sobrevivientes a vivir una vida libre de violencia en el futuro
           </p>
         </div>
 
@@ -329,61 +339,114 @@
     </div>
   </section>
 
-  <section id="donate" class="relative overflow-hidden border-b w-full bg-primary">
+  <section id="donate" class="relative overflow-hidden border-b w-full bg-white">
     <div class="px-6 py-8 sm:px-6 sm:py-20">
       <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-base font-semibold text-other tracking-wide uppercase">
+        <h2 class="text-base font-semibold text-secondary tracking-wide uppercase">
           Tus donaciones nos ayudan a seguir transformando vidas
         </h2>
-        <p
-          class="mt-1 text-4xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl sm:tracking-tight lg:text-6xl">
+        <p class="mt-1 text-4xl font-extrabold text-primary sm:text-5xl sm:tracking-tight lg:text-6xl">
           Dona Hoy,
           <span class="px-2 py-1 relative inline-block"><svg
-              class="stroke-current bottom-0 absolute text-secondary -translate-x-2" viewBox="0 0 410 18"
+              class="stroke-current bottom-0 absolute text-other -translate-x-2" viewBox="0 0 410 18"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M6 6.4c16.8 16.8 380.8-11.2 397.6 5.602" stroke-width="12" fill="none" fill-rule="evenodd"
                 stroke-linecap="round"></path>
             </svg><span class="relative">Cambia Vidas Mañana</span></span>
         </p>
-        <p class="max-w-3xl mt-5 mx-auto text-xl text-gray-500 dark:text-gray-300">
+        <p class="max-w-3xl mt-5 mx-auto text-xl text-primary">
           En Corazones of Courage Foundation, tu apoyo es vital para ayudar a
           mujeres que han sido víctimas de violencia de género. Con tu
           donación, contribuimos a ofrecer programas de educación y apoyo
           psicológico que permiten a estas mujeres reconstruir sus vidas con
           dignidad y autonomía.
         </p>
-        <p class="max-w-3xl mt-5 mx-auto text-xl text-gray-500 dark:text-gray-300">
+        <p class="max-w-3xl mt-5 mx-auto text-xl text-primary">
           <span class="font-bold text-secondary">¡Únete a nuestra misión!</span>
           Cada contribución, por pequeña que sea, ayuda a romper el ciclo de
           la violencia y a crear un futuro más seguro para todas. Dona hoy y
           sé parte del cambio.
         </p>
         <a href="#"
-          class="inline-block px-6 py-3 mt-8 bg-other text-white font-semibold rounded hover:bg-white hover:text-primary z-10">
+          class="inline-block px-6 py-3 mt-8 bg-other text-white font-semibold rounded hover:bg-primary hover:text-secondary z-10">
           ¡Haz tu donación ahora!
         </a>
       </div>
     </div>
   </section>
 
-  <section id="team" class="overflow-hidden bg-white pb-12 pt-20 lg:pb-[90px] lg:pt-[120px]">
+  <section id="team" class="overflow-hidden bg-primary pb-12 pt-20 lg:pb-[90px] lg:pt-[120px]">
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap -mx-4">
         <div class="w-full px-4">
           <div class="mx-auto mb-[60px] max-w-[485px] text-center">
-            <span class="block mb-2 text-lg font-semibold text-primary">
-              Nuestro Equipo
-            </span>
-            <h2 class="mb-3 text-3xl text-primary font-kanit font-bold leading-[1.2] sm:text-4xl md:text-[40px]">
+            <h2 class="mb-3 text-3xl text-white font-kanit font-bold leading-[1.2] sm:text-4xl md:text-[40px]">
               Nuestro Equipo
             </h2>
-            <p class="text-xl text-primary">
-              Este equipo llenos de energia bla bla bla bla bla bla bla
+            <p class="text-xl text-white">
+              Somos un equipo de especialistas con corazón, comprometidas con la labor de acompañar y transformar vidas
             </p>
           </div>
         </div>
       </div>
-      <div id="team_container" class="flex flex-wrap justify-center -mx-4"></div>
+      <div id="team_container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-center -mx-4"></div>
+    </div>
+  </section>
+
+  <section id="sponsor" class="relative w-full overflow-hidden py-[60px] bg-white sponsor-carousel">
+    <h2 class="text-secondary font-bold text-3xl text-center pb-5">Nuestros Aliados</h2>
+
+    <div class="sponsor-track">
+      <!-- Original set -->
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_1.jpg" alt="Sponsor 1">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_2.png" alt="Sponsor 2">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_3.jpg" alt="Sponsor 3">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_4.png" alt="Sponsor 4">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_5.jpg" alt="Sponsor 5">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_6.jpg" alt="Sponsor 6">
+      </div>
+
+      <!-- Clone set for seamless looping -->
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_1.jpg" alt="Sponsor 1">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_2.png" alt="Sponsor 2">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_3.jpg" alt="Sponsor 3">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_4.png" alt="Sponsor 4">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_5.jpg" alt="Sponsor 5">
+      </div>
+      <div class="w-[200px] h-[150px] md:w-[250px] md:h-[200px] sponsor-slide">
+        <img src="./src/assets/images/sponsors/sponsor_6.jpg" alt="Sponsor 6">
+      </div>
+    </div>
+  </section>
+
+  <section id="reportaje" class="">
+    <div class="bg-primary pt-12 sm:pt-16 pb-7">
+      <div class="relative mx-auto mt-4 md:mt-8">
+        <div class="lg:max-w-4xl lg:mx-auto">
+          <script type="text/javascript" charset="UTF-8"
+            src="https://telemundohouston.com/portableplayer/?CID=1:20:2465622&videoID=2405591619812&origin=telemundohouston.com&fullWidth=y&autoplay=true"></script>
+        </div>
+      </div>
     </div>
   </section>
 

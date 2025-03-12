@@ -104,3 +104,39 @@
 .anima:hover::before {
   left: 0;
 }
+
+.sponsor-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: calc(250px * 12);
+  /* 6 sponsors x 2 for the clone set */
+}
+
+.sponsor-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.sponsor-slide img {
+  max-width: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 6));
+    /* Move back by the width of the original set */
+  }
+}
+
+/* Pause animation on hover */
+.sponsor-carousel:hover .sponsor-track {
+  animation-play-state: paused;
+}

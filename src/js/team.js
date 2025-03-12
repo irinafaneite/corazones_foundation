@@ -1,29 +1,35 @@
+import irinaImg from '../assets/images/members/irina.webp';
+import norveliaImg from '../assets/images/members/norvelia.webp';
+import zulmaImg from '../assets/images/members/zulma.webp';
+import marlyImg from '../assets/images/members/marly.webp';
+import vanessaImg from '../assets/images/members/vanessa.webp';
+
 export const teamMembers = [
   {
     name: "Irina Faneite",
     occupation: "Fundadora, Psicóloga, Perito experta en violencia",
-    photo: "./src/assets/images/members/irina.webp",
+    photo: irinaImg,
   },
   {
     name: "Norvelia Velasquez",
     occupation: "Psicologa psicoterapeuta, Facilidatora de biodanza",
-    photo: "./src/assets/images/members/norvelia.webp",
+    photo: norveliaImg,
   },
   {
     name: "Zulma Camacaro",
     occupation:
       "Psicóloga, Sexóloga, Especialista en prevención y atención del abuso sexual",
-    photo: "./src/assets/images/members/zulma.webp",
+    photo: zulmaImg,
   },
   {
     name: "Marly Rivera",
     occupation: "Psicóloga, Especialista en trabajo comunitario",
-    photo: "./src/assets/images/members/marly.webp",
+    photo: marlyImg,
   },
   {
     name: "Vanessa de Colic",
     occupation: "Psicóloga, Coach de niños y familias",
-    photo: "./src/assets/images/members/vanessa.webp",
+    photo: vanessaImg,
   },
 ];
 

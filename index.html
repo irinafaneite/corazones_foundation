@@ -35,6 +35,45 @@
     href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
   <title>Corazones of Courage Foundation - Apoyo contra la violencia de género</title>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "HN5NO-jsc7pLwjlID",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      const form = document.getElementById('form')
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_ntbqd8h', 'template_hzgnh9q', this)
+          .then(() => {
+            console.log('SUCCESS!');
+            // Save the form's height before changing content
+            const formHeight = form.offsetHeight;
+            // Replace form with success message
+            form.innerHTML = `
+              <div class="flex items-center justify-center" style="min-height: ${formHeight}px">
+                <div class="text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-secondary mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <h2 class="text-2xl font-bold text-white mb-2">¡Mensaje enviado con éxito!</h2>
+                  <p class="text-white">Gracias por contactarnos. Nos comunicaremos contigo pronto.</p>
+                </div>
+              </div>
+            `;
+          }, (error) => {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
 </head>
 
 <body class="font-kanit">
@@ -106,7 +145,8 @@
               grupal e individual y soporte integral a las sobrevivientes.
             </p>
             <div class="flex gap-5">
-              <a href="#about" class="bg-other text-white text-2xl font-medium px-4 py-2 rounded shadow cursor-pointer inline-block text-center">
+              <a href="#about"
+                class="bg-other text-white text-2xl font-medium px-4 py-2 rounded shadow cursor-pointer inline-block text-center">
                 ¡Conocenos!
               </a>
               <a href="https://www.paypal.com/donate/?hosted_button_id=CQZKFA8DU5DJ8" target="_blank"
@@ -371,8 +411,15 @@
         <h2 class="text-base font-semibold text-secondary tracking-wide uppercase">
           Tus donaciones nos ayudan a seguir transformando vidas
         </h2>
-        <p class="mt-1 text-4xl font-extrabold text-primary sm:text-5xl sm:tracking-tight lg:text-6xl">
-          Dona Hoy, cambia vidas mañana
+        <p
+          class="mt-1 flex items-center justify-center gap-2 text-4xl font-extrabold text-primary sm:text-5xl sm:tracking-tight lg:text-6xl">
+          Dona Hoy <span class="flex-shrink-0 mt-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+              class="fill-secondary mx-auto">
+              <path
+                d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+            </svg>
+          </span>
         </p>
         <p class="max-w-3xl mt-5 mx-auto text-xl text-primary">
           En Corazones of Courage Foundation, tu apoyo es vital para ayudar a
@@ -473,12 +520,13 @@
   </section>
 
   <section id="contact" class="bg-primary relative">
-    <div class="container px-5 py-24 mx-auto">
+    <div class="container px-5 pt-24 pb-8 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         <h1 class="sm:text-4xl text-3xl font-kanit font-bold text-secondary mb-4">Contáctanos</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-white text-xl">Si quieres unirte como patrocinador o voluntario ¡escríbenos!</p>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-white text-xl">Si quieres unirte como patrocinador o voluntario
+          ¡escríbenos!</p>
       </div>
-      <form action="https://fabform.io/f/{form-id}" method="post">
+      <form id="form" method="post">
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
@@ -503,15 +551,19 @@
               </div>
             </div>
             <div class="p-2 w-full">
-              <button
-                class="flex mx-auto text-white bg-other border-0 py-2 px-8 focus:outline-none hover:bg-white hover:text-secondary rounded text-lg">Enviar
-              </button>
+              <input type="submit" value="Enviar"
+                class="flex mx-auto text-white bg-other border-0 py-2 px-8 focus:outline-none hover:bg-white hover:text-secondary rounded text-lg">
             </div>
             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center"></div>
           </div>
         </div>
     </div>
     </form>
+
+    <div class="bg-primary text-white text-center pb-20">
+      <h3>Desarrollado por <span class="font-bold"><a href="https://www.linkedin.com/in/rafael-eduardo-guzman/"
+            target="_blank">@DevRafa</a></span></h3>
+    </div>
   </section>
 
   <script type="module" src="/src/main.js"></script>

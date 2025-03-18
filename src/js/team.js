@@ -16,7 +16,7 @@ export const teamMembers = [
     occupation: "Psicologa psicoterapeuta, Facilitadora de biodanza",
     photo: norveliaImg,
     instagram:
-      "https://www.instagram.com/zulmacamacarof?igsh=MWYyZHRtNTlvZnN1eA==",
+      "https://www.instagram.com/norveliavelasquez",
   },
   {
     name: "Zulma Camacaro",
@@ -24,19 +24,19 @@ export const teamMembers = [
       "Psicóloga, Sexóloga, Especialista en prevención y atención del abuso sexual",
     photo: zulmaImg,
     instagram:
-      "https://www.instagram.com/norveliavelasquez?igsh=MTBibzl3Njd2Y3Rubw==",
+      "https://www.instagram.com/zulmacamacaro",
   },
   {
     name: "Marly Rivera",
     occupation: "Psicóloga, Especialista en trabajo comunitario",
     photo: marlyImg,
-    instagram: "https://www.instagram.com/psicozoe?igsh=MThxZDUxOW94ZmgyeA==",
+    instagram: "https://www.instagram.com/psicozoe",
   },
   {
     name: "Vanessa de Colic",
     occupation: "Psicóloga, Coach de niños y familias",
     photo: vanessaImg,
-    instagram: "https://www.instagram.com/psico_kids?igsh=MWtlMm9pZzl4emZvcQ==",
+    instagram: "https://www.instagram.com/psico_kids",
   },
 ];
 

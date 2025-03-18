@@ -3,6 +3,7 @@ import norveliaImg from "../assets/images/members/norvelia.webp";
 import zulmaImg from "../assets/images/members/zulma.webp";
 import marlyImg from "../assets/images/members/marly.webp";
 import vanessaImg from "../assets/images/members/vanessa.webp";
+import bgTeamImg from "../assets/images/bg_team_member.webp";
 
 export const teamMembers = [
   {
@@ -60,7 +61,7 @@ export const team = (data) => {
                 <span
                   class="absolute top-0 right-0 transition-all opacity-0 -z-10 group-hover:opacity-100"
                 >
-                  <img src="./src/assets/images/bg_team_member.webp" />
+                  <img src=${bgTeamImg} />
                 </span>
               </div>
               <div class="text-center">

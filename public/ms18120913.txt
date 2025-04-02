@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Archivo de comprobación de propiedad del dominio para Microsoft 365: colocar en la raíz del sitio web",
+  "Domain": "corazonesofcouragefoundation.org",
+  "Id": "98daefc8-7cac-4f01-bf5b-98609b8fa047"
+}

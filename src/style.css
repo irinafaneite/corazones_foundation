@@ -107,9 +107,8 @@
 
 .sponsor-track {
   display: flex;
-  animation: scroll 30s linear infinite;
-  width: calc(250px * 12);
-  /* 6 sponsors x 2 for the clone set */
+  animation: scroll 35s linear infinite;
+  width: calc(250px * 16);
 }
 
 .sponsor-slide {
@@ -131,8 +130,7 @@
   }
 
   100% {
-    transform: translateX(calc(-250px * 6));
-    /* Move back by the width of the original set */
+    transform: translateX(calc(-250px * 8));
   }
 }
 

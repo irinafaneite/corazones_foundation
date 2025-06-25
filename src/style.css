@@ -108,7 +108,7 @@
 .sponsor-track {
   display: flex;
   animation: scroll 35s linear infinite;
-  width: calc(250px * 16);
+  width: calc(250px * 20);
 }
 
 .sponsor-slide {
@@ -130,7 +130,7 @@
   }
 
   100% {
-    transform: translateX(calc(-250px * 8));
+    transform: translateX(calc(-250px * 10));
   }
 }
 

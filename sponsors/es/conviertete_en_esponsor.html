@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Fundación Corazones of Courage - Organización sin fines de lucro 501(c)(3) comprometida con la prevención y atención de la violencia de género" />
+    <meta name="keywords"
+        content="violencia de género, apoyo psicológico, educación, mujeres, prevención, Houston, Texas" />
+    <meta name="author" content="Fundación Corazones of Courage" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://corazonesofcouragefoundation.org/" />
+    <meta property="og:title" content="Fundación Corazones of Courage - Apoyo contra la violencia de género" />
+    <meta property="og:description"
+        content="Organización sin fines de lucro 501(c)(3) comprometida con la prevención y atención de la violencia de género" />
+    <meta property="og:image" content="/logo-blanco.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://corazonesofcouragefoundation.org/" />
+    <meta property="twitter:title" content="Fundación Corazones of Courage - Apoyo contra la violencia de género" />
+    <meta property="twitter:description"
+        content="Organización sin fines de lucro 501(c)(3) comprometida con la prevención y atención de la violencia de género" />
+    <meta property="twitter:image" content="/logo-blanco.png" />
+
+    <link rel="canonical" href="https://corazonesofcouragefoundation.org/" />
+    <link rel="icon" type="image/png" href="/logo-blanco.png" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <title>Fundación Corazones of Courage - Patrocinio 3ra Edición</title>
+    <!-- Tailwind CSS V3 CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Public Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#002c42',
+                            red: '#c1121f',
+                            light: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Public Sans', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'twelve': '12px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style data-purpose="custom-layouts">
+        .heart-mask {
+            clip-path: path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z');
+        }
+
+        /* Custom utility for the specific heart shape in the image */
+        .program-heart-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .floating-heart {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans text-brand-navy bg-white selection:bg-brand-red selection:text-white">
+    <!-- BEGIN: Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <div class="flex items-center gap-2">
+                        <img class="w-[50px]" src="../../src/assets/images/bg_team_member.webp" />
+                        <span class="font-extrabold text-lg tracking-tight uppercase">Corazones <span
+                                class="text-brand-red">of Courage</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a class="hover:text-brand-red px-3 py-2 font-medium transition-colors" href="#program">El
+                            Programa</a>
+                        <a class="hover:text-brand-red px-3 py-2 font-medium transition-colors"
+                            href="#sponsor">Patrocinio</a>
+                        <a class="bg-brand-red text-white px-6 py-2.5 rounded-twelve font-bold hover:bg-brand-navy transition-all shadow-lg hover:shadow-brand-red/20"
+                            href="#donate">Dona Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Navigation -->
+
+    <!-- BEGIN: Hero Section -->
+    <section class="relative overflow-hidden bg-brand-navy text-white py-20 lg:py-32">
+        <!-- Background Decor -->
+        <div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 opacity-10">
+            <svg fill="currentColor" height="600" viewbox="0 0 24 24" width="600">
+                <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                </path>
+            </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-purpose="hero-content">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-brand-red/20 text-brand-red border border-brand-red/30 font-bold text-sm uppercase tracking-widest mb-6">
+                        Hito de la 3ra Edición
+                    </span>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-6">
+                        Conviértete en <span class="text-brand-red">Patrocinador</span>
+                    </h1>
+                    <p class="text-xl text-slate-300 mb-10 max-w-lg leading-relaxed">
+                        Tu apoyo brinda orientación emocional, clases psicoeducativas y recursos esenciales para ayudar
+                        a las mujeres sobrevivientes de violencia a reconstruir sus vidas con esperanza.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a class="px-8 py-4 bg-brand-red hover:bg-white hover:text-brand-navy text-white font-bold rounded-twelve transition-all transform hover:-translate-y-1 shadow-xl"
+                            href="#sponsor">
+                            Patrocina a una Sobreviviente
+                        </a>
+                        <a class="px-8 py-4 border border-white/30 hover:bg-white/10 text-white font-bold rounded-twelve transition-all"
+                            href="#program">
+                            Saber Más
+                        </a>
+                    </div>
+                </div>
+                <div class="relative" data-purpose="hero-image-container">
+                    <div class="relative z-10">
+                        <img alt="Mujeres abrazándose en apoyo" class="w-full h-auto object-cover drop-shadow-2xl"
+                            src="../../src/assets/images/sponsors_page/sponsor_hero.png" />
+                    </div>
+                    <!-- Decorative element: Floating red heart -->
+                    <div
+                        class="absolute -bottom-6 -left-6 w-24 h-24 bg-brand-red rounded-full flex items-center justify-center shadow-lg floating-heart">
+                        <svg class="w-12 h-12 text-white" fill="currentColor" viewbox="0 0 24 24">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Hero Section -->
+
+    <!-- BEGIN: Program Introduction -->
+    <section class="py-24 bg-white" id="program">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-navy font-bold text-sm uppercase tracking-[0.3em] mb-4">Conoce Nuestro Programa
+                </h2>
+                <h3 class="text-4xl md:text-5xl font-extrabold mb-6">Courage Para Sanar</h3>
+                <div class="w-24 h-1 bg-brand-red mx-auto"></div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Feature Items -->
+                    <div
+                        class="flex gap-4 p-6 bg-slate-50 rounded-twelve border border-slate-100 hover:border-brand-red/30 transition-colors">
+                        <div class="text-brand-red shrink-0">
+                            <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Duración</h4>
+                            <p class="text-slate-600">Un programa gratuito de seis meses dedicado a la sanación.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-4 p-6 bg-slate-50 rounded-twelve border border-slate-100 hover:border-brand-red/30 transition-colors">
+                        <div class="text-brand-red shrink-0">
+                            <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Clases Semanales</h4>
+                            <p class="text-slate-600">Apoyo constante a través de clases educativas estructuradas.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-4 p-6 bg-slate-50 rounded-twelve border border-slate-100 hover:border-brand-red/30 transition-colors">
+                        <div class="text-brand-red shrink-0">
+                            <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Individualizado</h4>
+                            <p class="text-slate-600">Sesiones psicoeducativas personalizadas para una sanación
+                                profunda.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-4 p-6 bg-slate-50 rounded-twelve border border-slate-100 hover:border-brand-red/30 transition-colors">
+                        <div class="text-brand-red shrink-0">
+                            <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Atención de Emergencia</h4>
+                            <p class="text-slate-600">Respuestas a necesidades urgentes causadas por la violencia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="relative p-4">
+                        <div class="absolute inset-0 bg-brand-red/10 rounded-full blur-3xl -z-10"></div>
+                        <img alt="Detalles e impacto del programa" class="drop-shadow-2xl w-full"
+                            src="../../src/assets/images/sponsors_page/sanar_program.png" />
+                    </div>
+                    <div
+                        class="mt-8 text-center lg:text-left italic text-xl text-slate-500 border-l-4 border-brand-red pl-6 py-2">
+                        “Porque sanar siempre es posible, y nadie tiene que hacerlo sola.”
+                    </div>
+                    <div class="mt-6 flex items-center justify-center lg:justify-start gap-4">
+                        <span class="text-4xl font-extrabold text-brand-navy">30+</span>
+                        <span class="text-slate-500 font-medium max-w-[150px] leading-tight">Mujeres ayudadas en nuestro
+                            camino hasta ahora.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Program Introduction -->
+
+    <!-- BEGIN: Sponsorship Tiers -->
+    <section class="py-24 bg-brand-navy text-white" id="sponsor">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-6">Elige Tu Impacto</h2>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">Tu contribución transforma directamente una vida.
+                    Selecciona un nivel de patrocinio para comenzar.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Tier 1 -->
+                <div class="group relative bg-white/5 border border-white/10 p-8 lg:p-12 rounded-twelve hover:bg-white/10 transition-all duration-500"
+                    data-purpose="tier-card">
+                    <div
+                        class="absolute -top-6 left-12 bg-brand-red text-white px-6 py-2 rounded-twelve font-bold shadow-lg">
+                        Más Necesario</div>
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold mb-2">Apoya a 1 Mujer</h3>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-5xl font-extrabold text-brand-red">$1,250</span>
+                            <span class="text-slate-400">/ programa</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-10 text-slate-300">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                            </svg>
+                            Orientación emocional completa
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                            </svg>
+                            Acceso total a clases semanales
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                            </svg>
+                            Recursos de sanación esenciales
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full py-4 bg-brand-red hover:bg-white hover:text-brand-navy text-white font-bold rounded-twelve transition-colors uppercase tracking-widest">Dona
+                        Ahora</button>
+                </div>
+                <!-- Tier 2 -->
+                <div class="group relative bg-white/5 border border-white/10 p-8 lg:p-12 rounded-twelve hover:bg-white/10 transition-all duration-500"
+                    data-purpose="tier-card">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold mb-2">Apoya a 2 Mujeres</h3>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-5xl font-extrabold text-brand-red">$2,500</span>
+                            <span class="text-slate-400">/ programa</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-10 text-slate-300">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                            </svg>
+                            Apoyo dual integral
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                            </svg>
+                            Planificación de seguridad y estabilidad
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                            </svg>
+                            Reconstruyendo vidas con esperanza
+                        </li>
+                    </ul>
+                    <div class="space-y-4">
+                        <button
+                            class="w-full py-4 bg-transparent border-2 border-brand-red text-white hover:bg-brand-red font-bold rounded-twelve transition-colors uppercase tracking-widest">Dona
+                            Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <p class="text-xl font-medium italic">“Gracias por ser parte de su transformación.”</p>
+            </div>
+        </div>
+    </section>
+    <!-- END: Sponsorship Tiers -->
+
+    <!-- BEGIN: Call to Action Footer Section -->
+    <section class="py-20 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <img alt="Logo Fundación Corazones of Courage"
+                class="mx-auto mb-10 max-h-32 object-contain bg-brand-navy p-4 rounded-twelve"
+                src="../../src/assets/images/logo-blanco.png" />
+            <h2 class="text-4xl md:text-5xl font-extrabold text-brand-navy mb-6">Con tu apoyo, podemos hacerlo realidad.
+            </h2>
+            <p class="text-lg text-slate-600 mb-10">Únete a nosotros para hacer de la 3ra Edición de Courage Para Sanar
+                la más impactante hasta ahora.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a class="px-10 py-4 bg-brand-red text-white font-bold rounded-twelve hover:bg-brand-navy transition-all shadow-xl shadow-brand-red/20"
+                    href="#sponsor">Conviértete en Patrocinador</a>
+                <a class="px-10 py-4 bg-white border border-slate-200 text-brand-navy font-bold rounded-twelve hover:bg-slate-50 transition-all"
+                    href="https://corazonesofcouragefoundation.org/">Visita el Sitio Web Principal</a>
+            </div>
+        </div>
+    </section>
+    <!-- END: Call to Action Footer Section -->
+
+    <!-- BEGIN: Footer -->
+    <footer class="bg-brand-navy text-white py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4 justify-center md:justify-start">
+                        <img class="w-[50px]" src="../../src/assets/images/logo-blanco.png" />
+                        <span class="font-bold uppercase tracking-tight">Corazones <span class="text-brand-red">of
+                                Courage</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm text-center md:text-left">© 2026 Fundación Corazones of Courage.
+                        Todos los derechos reservados.</p>
+                </div>
+                <div class="flex gap-6 items-center">
+                    <a class="hover:text-brand-red transition-colors"
+                        href="https://www.instagram.com/corazonesofcouragefoundation/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                    <a class="hover:text-brand-red transition-colors"
+                        href="https://www.facebook.com/profile.php?id=61571507340028#" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a class="hover:text-brand-red transition-colors"
+                        href="https://www.linkedin.com/company/corazones-of-courage-foundation/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: Footer -->
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Corazones of Courage Foundation - Thank you for your support against gender-based violence" />
+    <meta name="author" content="Corazones of Courage Foundation" />
+
+    <link rel="icon" type="image/png" href="/logo-blanco.png" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet" />
+    <title>¡Gracias! - Corazones of Courage Foundation</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#002c42',
+                            red: '#c1121f',
+                            light: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        kanit: ['Kanit', 'sans-serif'],
+                        sans: ['Public Sans', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'twelve': '12px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .floating-heart {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .gradient-background {
+            background: linear-gradient(135deg, #002c42 0%, #004d73 100%);
+        }
+    </style>
+</head>
+
+<body class="font-kanit bg-brand-light text-brand-navy selection:bg-brand-red selection:text-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="/" class="flex items-center gap-2">
+                        <img class="w-[45px]" src="./src/assets/images/logo-blanco.png" alt="Logo"
+                            style="filter: invert(1) brightness(0.2);" />
+                        <span class="font-extrabold text-lg tracking-tight uppercase hidden sm:block">Corazones <span
+                                class="text-brand-red">of Courage</span></span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://corazonesofcouragefoundation.org/" class="text-brand-navy hover:text-brand-red font-bold transition-colors">Volver al
+                        Inicio / Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="gradient-background text-white py-20 lg:py-32 relative overflow-hidden">
+            <!-- Background Decor Hearts -->
+            <div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 opacity-10">
+                <svg fill="currentColor" height="500" viewBox="0 0 24 24" width="500">
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                    </path>
+                </svg>
+            </div>
+            <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+                <!-- Heart Icon Badge -->
+                <div
+                    class="w-24 h-24 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-10 shadow-2xl floating-heart ring-8 ring-white/10">
+                    <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                        </path>
+                    </svg>
+                </div>
+
+                <!-- Main Headlines -->
+                <div class="space-y-6">
+                    <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight">
+                        ¡Gracias por tu Coraje!
+                        <span class="block text-brand-red text-3xl lg:text-5xl mt-3 font-medium">Thank you for your
+                            Courage!</span>
+                    </h1>
+                    <div class="w-32 h-1.5 bg-brand-red mx-auto my-10 rounded-full"></div>
+                    <p class="text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed font-sans font-light">
+                        Tu generosidad es el motor que nos permite seguir transformando realidades y brindando esperanza
+                        a mujeres sobrevivientes de violencia.
+                        <br>
+                        <span class="text-xl text-slate-400 mt-4 block italic">Your generosity drives us to continue
+                            transforming realities and providing hope to women survivors of violence.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Receipt Form Section -->
+        <section class="py-16 px-6 -mt-10">
+            <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-8 lg:p-12 relative z-20">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl font-bold text-brand-navy mb-2">Solicita tu recibo de donación</h2>
+                    <p class="text-slate-600 font-sans italic">Complete your details below to receive your donation
+                        receipt.</p>
+                </div>
+
+                <form id="receipt-form" action="#" method="POST" class="space-y-6">
+                    <!-- Name Field -->
+                    <div>
+                        <label for="full_name" class="block text-sm font-bold text-brand-navy mb-2">
+                            Nombre Completo <span class="text-slate-400 font-normal">/ Full Name</span>
+                        </label>
+                        <input type="text" id="full_name" name="full_name" required placeholder="Ej. Maria Garcia"
+                            class="w-full px-4 py-4 rounded-twelve border border-slate-200 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition-all">
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-sm font-bold text-brand-navy mb-2">
+                            Correo Electrónico <span class="text-slate-400 font-normal">/ Email Address</span>
+                        </label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com"
+                            class="w-full px-4 py-4 rounded-twelve border border-slate-200 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none transition-all">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit"
+                            class="w-full py-5 bg-brand-red text-white font-extrabold rounded-twelve hover:bg-brand-navy transition-all shadow-xl shadow-brand-red/20 uppercase tracking-widest text-lg transform hover:-translate-y-1">
+                            Enviar mis datos <span class="block text-xs font-normal opacity-70">Submit My Details</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success Message (Hidden by default) -->
+                <div id="success-msg" class="hidden text-center py-8">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-navy mb-2">¡Recibido con éxito!</h3>
+                    <p class="text-slate-600 italic">We have received your request. We'll send the receipt shortly.</p>
+                    <a href="/" class="inline-block mt-8 text-brand-red font-bold hover:underline">Volver a la página
+                        principal / Back to main page</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Asset Section -->
+        <section class="max-w-6xl mx-auto pb-24 px-6 h-[40vh] mb-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-full">
+                <div class="rounded-2xl overflow-hidden h-full">
+                    <img src="./src/assets/images/header_img_1.webp" class="w-full h-full object-cover" alt="Support 1">
+                </div>
+                <div class="rounded-2xl overflow-hidden h-full">
+                    <img src="./src/assets/images/header_img_2.webp" class="w-full h-full object-cover" alt="Support 2">
+                </div>
+                <div class="rounded-2xl overflow-hidden h-full hidden md:block">
+                    <img src="./src/assets/images/header_img_3.webp" class="w-full h-full object-cover" alt="Support 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Simplified) -->
+    <footer class="bg-brand-navy text-white py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center gap-2 mb-6 justify-center">
+                <img class="w-[40px]" src="./src/assets/images/logo-blanco.png" alt="Logo" />
+                <span class="font-bold uppercase tracking-tight">Corazones <span class="text-brand-red">of
+                        Courage</span></span>
+            </div>
+            <p class="text-slate-400 text-sm">© 2026 Corazones of Courage Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('receipt-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Typically you would process this with a backend or script
+            // For now, we show the success message
+            this.classList.add('hidden');
+            document.getElementById('success-msg').classList.remove('hidden');
+
+            // Re-center success message if needed or just scroll
+            window.scrollTo({ top: document.getElementById('success-msg').offsetTop - 100, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>

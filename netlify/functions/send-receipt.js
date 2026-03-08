@@ -24,7 +24,7 @@ export const handler = async (event) => {
     // 1. Send notification to the foundation
     const { data: adminData, error: adminError } = await resend.emails.send({
       from: 'Corazones of Courage <info@corazonesofcouragefoundation.org>',
-      to: 'rega1237@gmail.com',
+      to: 'corazonesofcourage@gmail.com',
       subject: 'New Receipt Request - Corazones of Courage',
       html: `
         <h2>New Donation Receipt Request</h2>

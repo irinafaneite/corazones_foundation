@@ -202,15 +202,56 @@
     </footer>
 
     <script>
-        document.getElementById('receipt-form').addEventListener('submit', function (e) {
+        document.getElementById('receipt-form').addEventListener('submit', async function (e) {
             e.preventDefault();
-            // Typically you would process this with a backend or script
-            // For now, we show the success message
-            this.classList.add('hidden');
-            document.getElementById('success-msg').classList.remove('hidden');
 
-            // Re-center success message if needed or just scroll
-            window.scrollTo({ top: document.getElementById('success-msg').offsetTop - 100, behavior: 'smooth' });
+            const form = this;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerText;
+
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Sending...';
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+            const formData = new FormData(form);
+            const data = {
+                full_name: formData.get('full_name'),
+                email: formData.get('email')
+            };
+
+            try {
+                const response = await fetch('/.netlify/functions/send-receipt', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (response.ok) {
+                    // Show success message
+                    form.classList.add('hidden');
+                    document.getElementById('success-msg').classList.remove('hidden');
+
+                    // Scroll to success message
+                    window.scrollTo({
+                        top: document.getElementById('success-msg').offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Failed to send request');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Something went wrong: ' + error.message);
+
+                // Reset button
+                submitBtn.disabled = false;
+                submitBtn.innerText = originalBtnText;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+            }
         });
     </script>
 </body>

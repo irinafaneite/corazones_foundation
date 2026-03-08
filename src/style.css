@@ -138,3 +138,47 @@
 .sponsor-carousel:hover .sponsor-track {
   animation-play-state: paused;
 }
+
+/* Floating Sponsor Button */
+.floating-sponsor-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 50;
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.floating-sponsor-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-primary);
+}
+
+/* Ensure image isn't too white on white background */
+.floating-sponsor-btn .invert {
+  filter: none; /* Already white, but let's be explicit if needed */
+}
+
+@media (max-width: 640px) {
+  .floating-sponsor-btn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .floating-sponsor-btn span {
+    font-size: 0.9rem;
+  }
+
+  .floating-sponsor-btn img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

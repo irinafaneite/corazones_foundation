@@ -40,7 +40,11 @@ const renderEvents = (events) => {
                         <img src="${photo || '/logo-blanco.png'}" class="w-12 h-12 rounded object-cover border border-gray-100 invert-0 ${!photo ? 'invert bg-primary' : ''}">
                         <div>
                             <div class="font-bold text-primary">${event.title}</div>
-                            <div class="text-xs text-gray-500 truncate max-w-[200px]">${event.subtitle || ''}</div>
+                            <div class="text-xs text-gray-500 truncate max-w-[200px] mb-1">${event.subtitle || ''}</div>
+                            <div class="flex items-center gap-1 cursor-pointer" title="Double click to select">
+                                <span class="text-[10px] text-gray-400 font-bold">ID:</span>
+                                <code class="text-[10px] bg-gray-100 border border-gray-200 px-1.5 py-0.5 rounded text-gray-600 font-mono select-all">${event.id}</code>
+                            </div>
                         </div>
                     </div>
                 </td>

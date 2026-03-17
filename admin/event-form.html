@@ -65,6 +65,20 @@
     <main class="container mx-auto pt-28 pb-12 px-4 max-w-4xl">
         <form id="event-form" class="space-y-8" onsubmit="return false;">
             <input type="hidden" id="event-id">
+
+            <!-- Stripe Integration Info -->
+            <div id="stripe-info-container" class="hidden bg-blue-50/50 p-6 rounded-xl shadow-sm border border-blue-100 space-y-2">
+                <h3 class="text-sm font-bold text-blue-900 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                    </svg>
+                    Stripe Payment Link Integration
+                </h3>
+                <p class="text-sm text-blue-800">To link a Stripe Payment Link to this event, click <strong>"+ URL parameters"</strong> in your Stripe Dashboard and add a new parameter named <code class="bg-white px-1 py-0.5 rounded font-bold border border-blue-100">event_id</code> with the exact value below:</p>
+                <div class="pt-2">
+                    <input type="text" id="display-event-id" readonly class="block w-full px-4 py-3 bg-white border border-blue-200 rounded-lg outline-none font-mono text-sm text-gray-600 select-all focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all" value="" title="Double click to select all">
+                </div>
+            </div>
             
             <!-- Basic Info -->
             <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 space-y-6">

@@ -34,8 +34,13 @@ serve(async (req) => {
       const userEmail = session.customer_details?.email
       const userName = session.customer_details?.name
 
-      if (!eventId || !userEmail) {
-        console.error('Missing metadata or customer email', { eventId, userEmail })
+      if (!eventId) {
+        // Just ignore non-event payments or donations that aren't for an event
+        return new Response(JSON.stringify({ message: 'Not an event payment, skipping' }), { status: 200 })
+      }
+
+      if (!userEmail) {
+        console.error('Missing customer email', { eventId })
         return new Response('Missing information', { status: 400 })
       }
 

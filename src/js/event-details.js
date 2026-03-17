@@ -68,7 +68,12 @@ const populatePage = (event) => {
     document.getElementById('event-subtitle').textContent = event.subtitle || ''
     
     // Buttons
-    const checkoutUrl = event.checkout_url || '#'
+    let checkoutUrl = event.checkout_url || '#'
+    if (checkoutUrl !== '#' && event.id) {
+        // Append event_id to metadata so Stripe Webhook knows what event this is for
+        const separator = checkoutUrl.includes('?') ? '&' : '?'
+        checkoutUrl = `${checkoutUrl}${separator}prefilled_metadata[event_id]=${event.id}`
+    }
     document.getElementById('tickets-btn-top').href = checkoutUrl
     document.getElementById('tickets-btn-bottom').href = checkoutUrl
 

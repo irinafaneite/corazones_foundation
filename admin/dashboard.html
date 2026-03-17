@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Corazones of Courage</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+<body class="bg-gray-50 min-h-screen font-kanit">
+    <!-- Navbar -->
+    <nav class="bg-primary text-white shadow-lg py-4 px-6 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="/logo-blanco.png" alt="Logo" class="w-10 h-10 object-contain">
+                <span class="text-xl font-bold tracking-tight">Admin Dashboard</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="/" class="hover:text-other transition-colors">View Site</a>
+                <button id="logout-btn" class="bg-secondary hover:bg-white hover:text-secondary px-4 py-2 rounded font-bold transition-all text-sm">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto pt-28 pb-12 px-4">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-extrabold text-primary">Managed Events</h2>
+            <a href="./event-form.html" class="bg-other text-white font-bold px-6 py-3 rounded-lg shadow-md hover:bg-primary transition-all flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+                </svg>
+                Create Event
+            </a>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <table class="w-full text-left">
+                <thead class="bg-gray-50 border-b border-gray-100">
+                    <tr>
+                        <th class="px-6 py-4 text-sm font-semibold text-primary/70">Event Details</th>
+                        <th class="px-6 py-4 text-sm font-semibold text-primary/70">Date & Location</th>
+                        <th class="px-6 py-4 text-sm font-semibold text-primary/70">Status</th>
+                        <th class="px-6 py-4 text-sm font-semibold text-primary/70 text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="events-list" class="divide-y divide-gray-50">
+                    <!-- Loading State -->
+                    <tr id="loading-row">
+                        <td colspan="4" class="px-6 py-12 text-center text-gray-500">
+                            <div class="flex flex-col items-center gap-2">
+                                <svg class="animate-spin h-8 w-8 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                <span>Loading events...</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script type="module" src="./dashboard.js"></script>
+</body>
+</html>

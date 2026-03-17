@@ -1,4 +1,5 @@
 import { supabase } from './supabase.js'
+import { initNavigation } from './navigation.js'
 
 const eventHeader = document.getElementById('event-header')
 const loadingHero = document.getElementById('loading-hero')
@@ -6,6 +7,7 @@ const loadingCover = document.getElementById('loading-cover')
 const eventCover = document.getElementById('event-cover')
 
 const init = async () => {
+    initNavigation()
     const urlParams = new URLSearchParams(window.location.search)
     const eventId = urlParams.get('id')
 

@@ -82,41 +82,76 @@
             <div class="container mx-auto h-full sm:p-10">
                 <nav class="flex gap-5 pt-7 px-4 justify-between items-center lg:pt-0">
                     <div class="text-4xl font-bold">
-                        <img class="w-[50px]" src="./src/assets/images/logo-blanco.png" />
+                        <a href="/">
+                            <img class="w-[50px]" src="./src/assets/images/logo-blanco.png" alt="Corazones Foundation Logo" />
+                        </a>
                     </div>
                     <div class="flex items-center gap-5">
                         <ul class="hidden lg:flex">
                             <li class="mr-4">
-                                <a href="/">Home</a>
+                                <a href="/" class="hover:text-secondary transition-colors font-medium">Home</a>
                             </li>
                             <li class="mr-4">
-                                <a href="#about">Who We Are</a>
+                                <a href="/#about" class="hover:text-secondary transition-colors font-medium">Who We Are</a>
                             </li>
                             <li class="mr-4">
-                                <a href="#services">Services</a>
+                                <a href="/#services" class="hover:text-secondary transition-colors font-medium">Services</a>
                             </li>
                             <li class="mr-4">
-                                <a href="#donate">Donate!</a>
+                                <a href="/#donate" class="hover:text-secondary transition-colors font-medium">Donate!</a>
                             </li>
                             <li class="mr-4">
-                                <a href="#team">Team</a>
+                                <a href="/#team" class="hover:text-secondary transition-colors font-medium">Team</a>
                             </li>
                             <li class="mr-4">
-                                <a href="#sponsor">Partners</a>
+                                <a href="/#sponsor" class="hover:text-secondary transition-colors font-medium">Partners</a>
                             </li>
                             <li class="mr-4">
-                                <a href="/events.html">Events</a>
+                                <a href="/events.html" class="hover:text-secondary transition-colors font-medium font-bold">Events</a>
                             </li>
                             <li class="mr-4">
-                                <a href="#contact">Contact</a>
+                                <a href="/#contact" class="hover:text-secondary transition-colors font-medium">Contact</a>
                             </li>
                         </ul>
                         <a href="/sponsors/en/become_sponsor.html"
                             class="bg-secondary text-white font-bold px-4 py-2 rounded shadow hover:bg-white hover:text-secondary transition-colors hidden lg:block">
                             BECOME A SPONSOR
                         </a>
+                        
+                        <!-- Hamburger Toggle -->
+                        <button id="menu-toggle" class="lg:hidden text-white focus:outline-none cursor-pointer" aria-label="Open Menu">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
                     </div>
                 </nav>
+
+                <!-- Mobile Menu Overlay -->
+                <div id="mobile-menu" class="fixed inset-0 bg-primary z-[60] flex flex-col items-center justify-center transform translate-x-full transition-transform duration-300 lg:hidden overflow-hidden">
+                    <button id="menu-close" class="absolute top-7 right-7 text-white focus:outline-none cursor-pointer" aria-label="Close Menu">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <div class="mb-10">
+                        <img class="w-[80px]" src="./src/assets/images/logo-blanco.png" alt="Logo" />
+                    </div>
+                    <ul class="flex flex-col gap-6 text-center text-2xl text-white font-bold mb-10">
+                        <li><a href="/" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="/#about" class="hover:text-secondary transition-colors">Who We Are</a></li>
+                        <li><a href="/#services" class="hover:text-secondary transition-colors">Services</a></li>
+                        <li><a href="/#donate" class="hover:text-secondary transition-colors">Donate!</a></li>
+                        <li><a href="/#team" class="hover:text-secondary transition-colors">Team</a></li>
+                        <li><a href="/#sponsor" class="hover:text-secondary transition-colors">Partners</a></li>
+                        <li><a href="/events.html" class="hover:text-secondary transition-colors">Events</a></li>
+                        <li><a href="/#contact" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                    <a href="/sponsors/en/become_sponsor.html"
+                        class="bg-secondary text-white font-black px-8 py-3 rounded-xl shadow-lg hover:bg-white hover:text-secondary transition-all transform active:scale-95">
+                        BECOME A SPONSOR
+                    </a>
+                </div>
                 <header class="container pb-5 px-4 flex items-center h-full lg:mt-0 sm:pb-0">
                     <div class="w-full">
                         <h1 class="font-kanit text-justify max-[400px]:text-xl text-2xl lg:text-5xl font-bold relative">

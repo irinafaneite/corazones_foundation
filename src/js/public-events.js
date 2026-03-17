@@ -1,10 +1,12 @@
 import { supabase } from './supabase.js'
+import { initNavigation } from './navigation.js'
 
 const eventsContainer = document.getElementById('events-container')
 const loadingState = document.getElementById('loading-state')
 const emptyState = document.getElementById('empty-state')
 
 const init = async () => {
+    initNavigation()
     await fetchEvents()
 }
 

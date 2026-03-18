@@ -65,21 +65,6 @@
     <main class="container mx-auto pt-28 pb-12 px-4 max-w-4xl">
         <form id="event-form" class="space-y-8" onsubmit="return false;">
             <input type="hidden" id="event-id">
-
-            <!-- Stripe Integration Info -->
-            <div id="stripe-info-container" class="hidden bg-green-50/50 p-6 rounded-xl shadow-sm border border-green-100 space-y-2">
-                <h3 class="text-sm font-bold text-green-900 flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    Stripe Payment Link Integration Ready
-                </h3>
-                <p class="text-sm text-green-800">Good news! You just need to create the regular Payment Link in Stripe and paste it below. You <strong>do not</strong> need to configure any special URL parameters in Stripe. Our website will automatically attach the Event ID to the link so the webhook behaves correctly.</p>
-                <div class="pt-2">
-                    <p class="text-[11px] font-bold text-green-700 uppercase tracking-wide mb-1">For reference, this is the internal Event ID:</p>
-                    <input type="text" id="display-event-id" readonly class="block w-full px-3 py-2 bg-white/60 border border-green-200 rounded outline-none font-mono text-xs text-gray-600 select-all" value="" title="Double click to select all">
-                </div>
-            </div>
             
             <!-- Basic Info -->
             <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 space-y-6">

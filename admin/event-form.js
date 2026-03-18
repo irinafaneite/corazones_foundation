@@ -100,12 +100,6 @@ const loadEvent = async (id) => {
 
 const fillForm = (event, photo) => {
     document.getElementById('event-id').value = event.id
-    
-    // Show Stripe info
-    if (event.id) {
-        document.getElementById('display-event-id').value = event.id
-        document.getElementById('stripe-info-container').classList.remove('hidden')
-    }
 
     document.getElementById('title').value = event.title
     document.getElementById('subtitle').value = event.subtitle || ''

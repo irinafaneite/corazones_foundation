@@ -70,9 +70,9 @@ const populatePage = (event) => {
     // Buttons
     let checkoutUrl = event.checkout_url || '#'
     if (checkoutUrl !== '#' && event.id) {
-        // Append event_id to metadata so Stripe Webhook knows what event this is for
+        // Append event_id as client_reference_id so Stripe Webhook knows what event this is for
         const separator = checkoutUrl.includes('?') ? '&' : '?'
-        checkoutUrl = `${checkoutUrl}${separator}prefilled_metadata[event_id]=${event.id}`
+        checkoutUrl = `${checkoutUrl}${separator}client_reference_id=${event.id}`
     }
     document.getElementById('tickets-btn-top').href = checkoutUrl
     document.getElementById('tickets-btn-bottom').href = checkoutUrl

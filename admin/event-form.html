@@ -67,16 +67,17 @@
             <input type="hidden" id="event-id">
 
             <!-- Stripe Integration Info -->
-            <div id="stripe-info-container" class="hidden bg-blue-50/50 p-6 rounded-xl shadow-sm border border-blue-100 space-y-2">
-                <h3 class="text-sm font-bold text-blue-900 flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+            <div id="stripe-info-container" class="hidden bg-green-50/50 p-6 rounded-xl shadow-sm border border-green-100 space-y-2">
+                <h3 class="text-sm font-bold text-green-900 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                     </svg>
-                    Stripe Payment Link Integration
+                    Stripe Payment Link Integration Ready
                 </h3>
-                <p class="text-sm text-blue-800">To link a Stripe Payment Link to this event, click <strong>"+ URL parameters"</strong> in your Stripe Dashboard and add a new parameter named <code class="bg-white px-1 py-0.5 rounded font-bold border border-blue-100">event_id</code> with the exact value below:</p>
+                <p class="text-sm text-green-800">Good news! You just need to create the regular Payment Link in Stripe and paste it below. You <strong>do not</strong> need to configure any special URL parameters in Stripe. Our website will automatically attach the Event ID to the link so the webhook behaves correctly.</p>
                 <div class="pt-2">
-                    <input type="text" id="display-event-id" readonly class="block w-full px-4 py-3 bg-white border border-blue-200 rounded-lg outline-none font-mono text-sm text-gray-600 select-all focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all" value="" title="Double click to select all">
+                    <p class="text-[11px] font-bold text-green-700 uppercase tracking-wide mb-1">For reference, this is the internal Event ID:</p>
+                    <input type="text" id="display-event-id" readonly class="block w-full px-3 py-2 bg-white/60 border border-green-200 rounded outline-none font-mono text-xs text-gray-600 select-all" value="" title="Double click to select all">
                 </div>
             </div>
             

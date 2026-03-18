@@ -29,8 +29,8 @@ serve(async (req) => {
     if (event.type === 'checkout.session.completed') {
       const session = event.data.object as Stripe.Checkout.Session
 
-      // Metadata contains event_id (passed via URL parameter in frontend)
-      const eventId = session.metadata?.event_id
+      // Event ID is passed via client_reference_id (or metadata) in the checkout URL 
+      const eventId = session.client_reference_id || session.metadata?.event_id
       const userEmail = session.customer_details?.email
       const userName = session.customer_details?.name
 

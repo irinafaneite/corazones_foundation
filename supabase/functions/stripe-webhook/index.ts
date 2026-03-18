@@ -115,7 +115,7 @@ serve(async (req) => {
         .container { max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
         .header { background-color: #1A1A1A; padding: 40px 20px; text-align: center; }
         .logo { width: 70px; }
-        .hero { width: 100%; height: 300px; object-fit: cover; }
+        .hero { width: 100%; height: 300px; object-fit: cover; display: block; border-top: 15px solid #ffffff; }
         .content { padding: 40px 30px; }
         .badge { display: inline-block; padding: 4px 12px; background-color: #fef2f2; color: #f43f5e; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 20px; border: 1px solid #fee2e2; }
         h1 { color: #1a1a1a; font-size: 32px; font-weight: 800; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.5px; }

@@ -160,7 +160,7 @@ saveBtn.addEventListener('click', async () => {
         const eventData = {
             title,
             subtitle,
-            date: dateInput ? new Date(dateInput).toISOString() : null,
+            date: dateInput ? new Date(dateInput + ':00.000Z').toISOString() : null,
             site,
             location,
             checkout_url,
